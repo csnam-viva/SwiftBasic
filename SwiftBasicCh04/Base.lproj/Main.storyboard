@@ -40,21 +40,23 @@
             </objects>
             <point key="canvasLocation" x="-105" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="PGD-dj-Kvy">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="4L6-hv-f1c" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondVC" id="4L6-hv-f1c" customClass="SecondViewController" customModule="SwiftBasicCh04" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eY3-dS-cgk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="second screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUR-VM-nsR">
-                                <rect key="frame" x="117" y="261" width="174" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWe-bA-3Qw">
+                                <rect key="frame" x="86" y="302" width="183" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="second Screen"/>
+                                <connections>
+                                    <action selector="back:" destination="4L6-hv-f1c" eventType="touchUpInside" id="xWO-Tn-slg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QbU-FG-c1w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
